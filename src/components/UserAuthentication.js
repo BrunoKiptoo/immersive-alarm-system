@@ -73,17 +73,18 @@ function UserAuthentication() {
       <div className={`side back ${showLoginForm ? '' : 'hidden'}`}>
         <form onSubmit={handleLoginSubmit}>
           <div className="code-container">
-            {codes.map((code, index) => (
-              <input
-                ref={(ref) => (inputRefs.current[index] = ref)}
-                key={index}
-                type="text"
-                value={code}
-                onChange={(e) => handleCodeChange(e, index)}
-                maxLength={1}
-                required
-              />
-            ))}
+          {codes.map((code, index) => (
+  <input
+    ref={(ref) => (inputRefs.current[index] = ref)}
+    key={index}
+    type="password"
+    value={code}
+    onChange={(e) => handleCodeChange(e, index)}
+    maxLength={1}
+    required
+    className="w-16 h-16 text-4xl text-center bg-gray-300 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+  />
+))}
           </div>
           <button type="submit" className="hidden">ACCESS</button>
         </form>
