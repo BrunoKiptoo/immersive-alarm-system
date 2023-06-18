@@ -14,7 +14,7 @@ function Dashboard() {
         <UserAuthentication />
       </div>
       <footer className="dashboard-footer">
-        <p>&copy; 2023 CyberSec Inc.</p>
+        <p>&copy; 2023 ZoltraAfrica Inc.</p>
       </footer>
 
       <style jsx>{`
