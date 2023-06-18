@@ -1,8 +1,11 @@
 import React from 'react'
+import SensorIntegration from './SensorIntegration'
 
 function Home() {
   return (
-    <div>Home</div>
+    <div>
+        <SensorIntegration/>
+    </div>
   )
 }
 
