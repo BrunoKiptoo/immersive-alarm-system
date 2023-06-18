@@ -90,19 +90,19 @@ function UserAuthentication() {
       </div>
       <div className={`side left ${accessMessage ? 'access-message-side' : ''} bg-gray-200 p-4 flex items-center justify-center`}>
   {accessMessage && accessMessage === 'Access granted!' && (
-    <div className="text-green-500 font-semibold text-center">ACCESS GRANTED</div>
+    <div className="text-green-500 font-semibold text-center rounded-md">ACCESS GRANTED</div>
   )}
 </div>
 
 <div className={`side right ${accessMessage ? 'access-message-side' : ''} bg-gray-200 p-4 flex items-center justify-center`}>
   {accessMessage && accessMessage === 'Access denied!' && (
-    <div className="text-red-500 font-semibold text-center">ACCESS DENIED</div>
+    <div className="text-red-500 font-semibold text-center rounded-md">ACCESS DENIED!</div>
   )}
 </div>
 
       <div className={`side top ${accessMessage ? 'access-message-side' : ''}`}></div>
       <div className={`side bottom ${accessMessage ? 'access-message-side' : ''}`}></div>
-      {accessMessage && <div className="access-message">{accessMessage}</div>}
+      {/* {accessMessage && <div className="access-message">{accessMessage}</div>} */}
 
       <style jsx>{`
         .cube {
