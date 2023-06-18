@@ -1,11 +1,12 @@
 import React from 'react';
 import UserAuthentication from './UserAuthentication';
+import logo from '../Assets/image-removebg-preview (5).png'; // Assuming your logo file is named logo.png
 
 function Dashboard() {
   return (
     <div className="dashboard-container">
       <header className="dashboard-header">
-        <h1>Home Alarm System</h1>
+        <img src={logo} alt="Logo" className="dashboard-logo" />
       </header>
       <div className="dashboard-content">
         {/* Add your content here */}
@@ -24,6 +25,18 @@ function Dashboard() {
           justify-content: center;
           align-items: center;
           height: 100vh;
+        }
+
+        .dashboard-header {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+
+        .dashboard-logo {
+          width: 600px; // Adjust the width of the logo as needed
+          height: auto;
         }
 
         .authentication-container {
